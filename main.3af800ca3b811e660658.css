@@ -1,0 +1,745 @@
+/*!**************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/normalize.scss ***!
+  \**************************************************************************************************************************************************************/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset, img {
+  border: 0;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+caption, th {
+  text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+q:before, q:after {
+  content: "";
+}
+
+abbr, acronym {
+  border: 0;
+}
+
+button {
+  padding: 0;
+  background-color: inherit;
+  border: none;
+}
+/*!**************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/variables.scss ***!
+  \**************************************************************************************************************************************************************/
+
+/*!*********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/main.scss ***!
+  \*********************************************************************************************************************************************************/
+@charset "UTF-8";
+@font-face {
+  font-family: "PT ROOT UI";
+  src: url(5f94f523b831f12cedd2.woff);
+  src: url(adc1f6ccec94a7d7b7d4.woff2);
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PT ROOT UI";
+  src: url(24e125c185900aa7db0d.woff);
+  src: url(2815714e8d199f946366.woff2);
+  font-weight: 700;
+  font-style: normal;
+}
+body {
+  font-family: "PT ROOT UI";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1000px;
+  min-width: 320px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a, button {
+  cursor: pointer;
+}
+
+h2 {
+  margin-bottom: 50px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.header {
+  position: relative;
+  padding-right: 0;
+  padding-left: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+.header::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border-bottom: 3px solid #d70e2a;
+  width: 20.7%;
+}
+.header__main {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+  padding-right: 25px;
+  padding-left: 25px;
+  padding-top: 4px;
+  height: 60px;
+}
+.header__sub {
+  display: none;
+  font-size: 10px;
+  line-height: 24px;
+  background-color: #f9f9f9;
+  color: rgba(0, 0, 0, 0.7);
+}
+.header__eldorado, .header__mvideo {
+  padding-top: 9px;
+}
+.header__eldorado {
+  margin-right: 20px;
+}
+.header__mvideo {
+  margin-right: 31px;
+}
+.header__title {
+  margin-right: auto;
+  font-size: 14px;
+  line-height: 21px;
+  opacity: 70%;
+}
+.header__button {
+  margin-right: 0;
+}
+
+.hero {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 25px;
+  right: 25px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+.hero__title {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+.design {
+  position: relative;
+  padding-top: 41px;
+  padding-bottom: 60px;
+}
+.design::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 25px;
+  right: 25px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+.design__title {
+  margin-bottom: 54px;
+}
+.design__cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto; /* Обязательно для IE 11 */
+  gap: 20px;
+}
+.design__cards > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.design__cards > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+.design__cards > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+.design__cards > *:nth-child(4) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 7;
+}
+.design__cards .cards__item {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 0;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
+.design__cards .cards__item--black {
+  min-height: 302px;
+  padding: 20px 15px 24px 15px;
+  border-radius: 5px;
+  background-color: #171717;
+}
+.design__cards .cards__item--black > .cards__img {
+  max-width: 162px;
+  margin-bottom: 0;
+}
+.design__cards .cards__item--black > .cards__border {
+  margin-top: 0;
+  background: rgba(255, 255, 255, 0.25);
+}
+.design__cards .cards__item--black > .cards__description {
+  font-size: 14px;
+  line-height: 21px;
+  color: #FFF;
+}
+.design__cards .cards__border {
+  width: 100%;
+  height: 1px;
+  margin: 5px 0 20px 0;
+  border: 0;
+  background: rgba(0, 0, 0, 0.1);
+}
+.design__cards .cards__img {
+  display: block;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.video {
+  padding-top: 40px;
+  margin-bottom: 100px;
+}
+.video__content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  gap: 20px;
+}
+.video__img {
+  display: block;
+  width: calc((100% - 20px) / 2);
+  height: 100%;
+}
+.video__cards {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  gap: 40px;
+}
+.video__cards .advantages__card {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+  gap: 20px;
+}
+.video__cards .advantages__img {
+  width: 101px;
+}
+
+.accessories {
+  position: relative;
+  padding-bottom: 61px;
+}
+.accessories::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 25px;
+  right: 25px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+.accessories__title {
+  margin-bottom: 54px;
+}
+.accessories__content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20px 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto; /* Обязательно для IE 11 */
+  gap: 20px;
+}
+.accessories__content > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.accessories__content > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+.accessories__main, .accessories__sub {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20px 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto; /* Обязательно для IE 11 */
+  gap: 20px;
+}
+.accessories__main > *:nth-child(1), .accessories__sub > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.accessories__main > *:nth-child(2), .accessories__sub > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+.accessories__main .sub__description, .accessories__main .main__description, .accessories__sub .sub__description, .accessories__sub .main__description {
+  padding-top: 19px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.accessories__main .sub__img, .accessories__main .main__img, .accessories__sub .sub__img, .accessories__sub .main__img {
+  display: block;
+  width: 100%;
+  margin-bottom: 25px;
+}
+.accessories__main .sub__description, .accessories__sub .sub__description {
+  position: relative;
+}
+.accessories__main .sub__description::after, .accessories__sub .sub__description::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  width: 50px;
+}
+.accessories__sub {
+  gap: 19px;
+}
+
+.apps {
+  padding-top: 41px;
+  padding-bottom: 100px;
+}
+.apps__content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 18px 1fr 18px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: auto 47px auto;
+  grid-template-rows: auto auto; /* Обязательно для IE 11 */
+  gap: 18px;
+  row-gap: 47px;
+}
+.apps__content > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.apps__content > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+.apps__content > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+.apps__content > *:nth-child(4) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+.apps__content > *:nth-child(5) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+.apps__content > *:nth-child(6) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+}
+.apps__card.card {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  gap: 20px;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
+/*!**********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/media.scss ***!
+  \**********************************************************************************************************************************************************/
+@charset "UTF-8";
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .design {
+    padding-bottom: 62px;
+  }
+  .design__title {
+    margin-bottom: 40px;
+  }
+  .design__cards {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto 50px auto;
+    grid-template-rows: auto auto; /* Обязательно для IE 11 */
+    row-gap: 50px;
+  }
+  .design__cards > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .design__cards > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  .design__cards > *:nth-child(3) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .design__cards > *:nth-child(4) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+  }
+  .design__cards .cards__item--black > .cards__img {
+    max-width: none;
+    width: 90%;
+  }
+  .accessories__title {
+    margin-bottom: 40px;
+  }
+  .accessories__content {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: auto 50px auto;
+    grid-template-rows: auto auto; /* Обязательно для IE 11 */
+    row-gap: 50px;
+  }
+  .accessories__content > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .accessories__content > *:nth-child(2) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .apps__content {
+    row-gap: 39px;
+  }
+}
+@media (max-width: 576px) {
+  body {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  h2 {
+    margin-bottom: 30px;
+    font-size: 22px;
+    line-height: 31px;
+  }
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .header {
+    height: 74px;
+    padding-right: 0;
+    padding-left: 0;
+    border: none;
+  }
+  .header::after {
+    display: none;
+  }
+  .header__title {
+    display: none;
+  }
+  .header__mvideo {
+    padding-top: 0;
+    margin-right: auto;
+  }
+  .header__mvideo svg {
+    height: 30px;
+    width: 30px;
+  }
+  .header__eldorado {
+    padding-top: 0;
+    margin-right: 15px;
+  }
+  .header__eldorado svg {
+    height: 25px;
+    width: 25px;
+  }
+  .header__main, .header__sub {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .header__main {
+    height: 50px;
+  }
+  .header__sub {
+    display: block;
+  }
+  .hero {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .hero::after {
+    left: 15px;
+    right: 15px;
+  }
+  .hero__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .design {
+    padding-top: 20px;
+    padding-bottom: 51px;
+  }
+  .design__title {
+    margin-bottom: 31px;
+  }
+  .design::after {
+    left: 15px;
+    right: 15px;
+  }
+  .design__cards {
+    -ms-grid-columns: 1fr 7px 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto 40px auto 40px auto;
+    grid-template-rows: auto auto auto; /* Обязательно для IE 11 */
+    gap: 40px;
+    -webkit-column-gap: 7px;
+       -moz-column-gap: 7px;
+            column-gap: 7px;
+  }
+  .design__cards > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .design__cards > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  .design__cards > *:nth-child(3) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .design__cards > *:nth-child(4) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+  }
+  .design__cards > *:nth-child(5) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+  }
+  .design__cards > *:nth-child(6) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 3;
+  }
+  .design__cards .cards__item--black {
+    padding-bottom: 26px;
+  }
+  .design__cards .cards__item--black > .cards__img {
+    max-width: 230px;
+  }
+  .design__cards .cards__border {
+    margin-bottom: 17px;
+  }
+  .design__cards .cards__img {
+    margin-bottom: 21px;
+  }
+  .design__cards > :nth-child(1) {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column-span: 2;
+    grid-column: span 2;
+  }
+  .design__cards > :nth-child(3) {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .design__cards > :nth-child(4) {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 2;
+    grid-column: 2;
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .design__cards > :nth-child(2) {
+    -ms-grid-row: 3;
+    grid-row: 3;
+    -ms-grid-column-span: 2;
+    grid-column: span 2;
+  }
+  .video {
+    padding-top: 20px;
+    margin-bottom: 70px;
+  }
+  .video__content {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    gap: 30px;
+  }
+  .video__img {
+    margin-left: -15px;
+    width: 100vw;
+  }
+  .video__cards {
+    gap: 30px;
+  }
+  .video__cards .advantages__card {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    gap: 14px;
+  }
+  .accessories {
+    padding-bottom: 50px;
+  }
+  .accessories__title {
+    margin-bottom: 31px;
+  }
+  .accessories::after {
+    left: 15px;
+    right: 15px;
+  }
+  .accessories__content {
+    gap: 42px;
+  }
+  .accessories__main {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto; /* Обязательно для IE 11 */
+  }
+  .accessories__main > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .accessories__main > *:nth-child(2) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+  .accessories__sub {
+    gap: 7px;
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .apps {
+    padding-top: 20px;
+    padding-bottom: 70px;
+  }
+  .apps__content {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: auto 30px auto 30px auto 30px auto 30px auto;
+    grid-template-rows: auto auto auto auto auto; /* Обязательно для IE 11 */
+    row-gap: 30px;
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .apps__content > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .apps__content > *:nth-child(2) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .apps__content > *:nth-child(3) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+  }
+  .apps__content > *:nth-child(4) {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+  }
+  .apps__content > *:nth-child(5) {
+    -ms-grid-row: 9;
+    -ms-grid-column: 1;
+  }
+  .apps__card.card {
+    gap: 10px;
+    padding-bottom: 30px;
+  }
+  .apps__card.card:not(:last-child) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .apps__card.card:nth-child(2n+1) {
+    -ms-flex-direction: row;
+        flex-direction: row;
+  }
+  .apps__card.card:nth-child(2n) {
+    -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+  }
+}
