@@ -1,0 +1,272 @@
+@import 'variables.scss';
+
+@media (max-width: $breakpoint_tablet) {  
+    body {       
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .design {
+        padding-bottom: 62px;
+
+        &__title {
+            margin-bottom: 40px;
+        }
+
+        &__cards {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto; /* Обязательно для IE 11 */
+            row-gap: 50px;
+
+            & .cards__item--black > .cards__img {
+                max-width: none;
+                width: 90%;
+            }
+        }
+    }
+
+    .accessories {
+        &__title {
+            margin-bottom: 40px;
+        }
+
+        &__content {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto; /* Обязательно для IE 11 */
+            row-gap: 50px;
+        }
+    }
+
+    .apps {
+        &__content {
+            row-gap: 39px;
+        }
+    }
+}
+
+@media (max-width: $breakpoint_mobile) {  
+    body {       
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    h2 {
+        margin-bottom: 30px;
+        font-size: 22px;
+        line-height: 31px;        
+    }
+
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .header {
+        height: 74px;
+        padding-right: 0;
+        padding-left: 0;        
+        border: none;
+
+        &::after {
+            display: none;
+        }
+
+        &__title {
+            display: none;
+        }
+
+        &__mvideo {
+            padding-top: 0;
+            margin-right: auto;
+
+            & svg {
+                height: 30px;
+                width: 30px;
+            }
+        }
+
+        &__eldorado {
+            padding-top: 0;
+            margin-right: 15px;
+
+            & svg {
+                height: 25px;
+                width: 25px;
+            }
+        }
+
+        &__main,
+        &__sub {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        &__main {
+            height: 50px;
+        }
+
+        &__sub {
+            display: block;
+        }
+    }
+
+    .hero {
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        &::after {
+            left: 15px;
+            right: 15px;
+        }
+
+        &__title {
+            font-size: 30px;
+            line-height: 40px;
+        }
+    }
+
+    .design {
+        padding-top: 20px;
+        padding-bottom: 51px;
+
+        &__title {
+            margin-bottom: 31px;
+        }
+
+        &::after {
+            left: 15px;
+            right: 15px;
+        }
+
+        &__cards {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto auto; /* Обязательно для IE 11 */
+            gap: 40px;
+            column-gap: 7px;
+
+            & .cards__item--black {
+                padding-bottom: 26px;
+
+                & > .cards__img {
+                    max-width: 230px;
+                }
+            }     
+
+            & .cards {
+                &__border {
+                    margin-bottom: 17px;
+                }
+
+                &__img {
+                    margin-bottom: 21px;
+                }
+            }
+            
+            & > :nth-child(1) {
+                grid-row: 1;
+                grid-column: span 2;
+            }
+            
+            & > :nth-child(3) {
+                grid-row: 2;
+                grid-column: 1;
+                font-size: 12px;
+                line-height: 17px;
+            }
+            
+            & > :nth-child(4) {
+                grid-row: 2;
+                grid-column: 2;
+                font-size: 12px;
+                line-height: 17px;
+            }
+            
+            & > :nth-child(2) {
+                grid-row: 3;
+                grid-column: span 2;
+            }
+        }
+    }
+
+    .video {
+        padding-top: 20px;
+        margin-bottom: 70px;
+
+        &__content {
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        &__img {
+            margin-left: -15px;
+            width: 100vw;
+        }
+
+        &__cards {
+            gap: 30px;
+
+            & .advantages__card {
+                flex-direction: column;
+                gap: 14px;
+            }
+        }        
+    }
+
+    .accessories {
+        padding-bottom: 50px;
+
+        &__title {
+            margin-bottom: 31px;
+        }
+
+        &::after {
+            left: 15px;
+            right: 15px;
+        }
+
+        &__content {
+            gap: 42px;
+        }
+
+        &__main {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto; /* Обязательно для IE 11 */
+        }
+
+        &__sub {
+            gap: 7px;
+            font-size: 12px;
+            line-height: 17px;
+        }
+    }
+
+    .apps {
+        padding-top: 20px;    
+        padding-bottom: 70px;    
+
+        &__content {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto auto auto; /* Обязательно для IE 11 */
+            row-gap: 30px;
+            font-size: 12px;
+            line-height: 17px;
+        }
+
+        &__card.card {
+            gap: 10px;
+            padding-bottom: 30px;
+
+            &:not(:last-child) {
+                border-bottom: $borderCards;
+            }
+
+            &:nth-child(2n + 1) {
+                flex-direction: row; 
+            }
+
+            &:nth-child(2n) {
+                flex-direction: row-reverse;
+            }
+        }
+    }
+}
