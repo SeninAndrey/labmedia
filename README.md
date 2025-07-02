@@ -2,6 +2,10 @@
 
 верстка сайта по [макету](https://www.figma.com/file/GspxVH8DVwrF3KxiJCRrXQ/Eldorado_job?node-id=0%3A1&viewport=0%2C0%2C1) в Figma.
 
+[исходный код](https://github.com/SeninAndrey/labmedia) разместил на GitHub
+
+[собранный проект](https://seninandrey.github.io/labmedia/) опубликовал на GitHub Pages
+
  ### Технические требования:
 
  - [x] Адаптивная верстка
